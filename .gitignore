@@ -1,0 +1,33 @@
+# Build output
+/build/
+/build-*/
+/dist/
+
+# Local tool paths for build.sh (machine specific)
+/build.local.sh
+
+# Frame captures, bench runs and exported shaders (can be several GB)
+/captures/
+/rr-forza-captures/
+
+# Game shaders: every contributor exports them from their own copy of the game (game-shaders/README.md)
+/game-shaders/*
+!/game-shaders/README.md
+
+# Downloaded by tools/fetch-dxc.ps1
+/third_party/dxc/
+
+# Not needed to build (archived decompiler experiment, MinHook's own project files)
+/third_party/renodx-decomp/
+/third_party/minhook/build/
+/third_party/minhook/dll_resources/
+
+# The maintainer's working notes (Spanish, not part of the project)
+/notas-es/
+
+# Editors and OS
+.vs/
+.vscode/
+*.user
+Thumbs.db
+desktop.ini

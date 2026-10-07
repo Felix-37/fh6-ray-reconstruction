@@ -1,0 +1,59 @@
+name: Bug report
+description: Something does not work, crashes or looks wrong.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. English or Spanish are both fine.
+        Please check [Known issues](https://github.com/Felix-37/fh6-ray-reconstruction#known-issues) and
+        [docs/OPEN-PROBLEMS.md](https://github.com/Felix-37/fh6-ray-reconstruction/blob/main/docs/OPEN-PROBLEMS.md) first.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happens
+      description: What you see, and what you expected instead. Screenshots help a lot.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How to reproduce
+      description: Where in the game, which settings, what you pressed.
+  - type: input
+    id: addon
+    attributes:
+      label: Add-on version
+      description: Shown at the top of the "Ray Reconstruction" tab, for example 0.1.0-beta.
+    validations:
+      required: true
+  - type: input
+    id: game
+    attributes:
+      label: Game version and store
+      description: For example 6.440.853.0, Steam.
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU, VRAM and driver version
+      description: For example RTX 4070, 12 GB, driver 581.xx.
+    validations:
+      required: true
+  - type: input
+    id: settings
+    attributes:
+      label: Resolution, DLSS mode, frame generation, ray tracing settings
+  - type: input
+    id: reshade
+    attributes:
+      label: ReShade version and other mods
+      description: For example ReShade 6.8.0 (add-on), MFG Unlock, OptiScaler...
+  - type: textarea
+    id: log
+    attributes:
+      label: ReShade.log
+      description: Attach ReShade.log from the game folder (drag the file here), or paste the lines that start with [RR Forza].
+    validations:
+      required: true

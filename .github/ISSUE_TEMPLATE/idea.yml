@@ -1,0 +1,23 @@
+name: Idea or technical proposal
+description: A way to fix an open problem or to improve the image.
+labels: [enhancement]
+body:
+  - type: checkboxes
+    id: checked
+    attributes:
+      label: Before posting
+      options:
+        - label: I read docs/MEASUREMENTS.md (measured and discarded ideas) and this is not one of them, or I explain below why it deserves another try.
+          required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea
+      description: What to change, and why you expect it to help (references, measurements, other mods that did it).
+    validations:
+      required: true
+  - type: textarea
+    id: measure
+    attributes:
+      label: How it could be measured
+      description: Which bench button, scene or comparison would show whether it works.
